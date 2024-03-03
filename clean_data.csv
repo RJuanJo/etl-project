@@ -1,4 +1,4 @@
-hot_tub,pool,city,host_type,bedrooms,bathrooms,guests,revenue,openness,occupancy,nightly rate,lead time,length stay
+hot_tub,pool,city,host_type,bedrooms,bathrooms,guests,revenue,openness,occupancy,nightly_rate,lead_time,length_stay
 1.0,0.0,Big Bear Lake,2-5 Units,3.0,2.0,10.0,13001.229844250001,31.0,1.0,449.9599915,8.0,5.1
 0.0,0.0,Big Bear Lake,2-5 Units,3.0,2.0,10.0,449.9599915,31.0,0.032258065,449.9599915,8.0,1.0
 0.0,0.0,Big Bear Lake,2-5 Units,3.0,2.0,10.0,4949.679932,31.0,0.35483871,449.9709029,41.0,2.4
