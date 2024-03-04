@@ -1,0 +1,11 @@
+mysql
+matplotlib
+numpy
+pandas
+pip
+psycopg2-binary
+sqlalchemy
+sqlalchemy-utils
+mysqlclient
+seaborn
+mysql.connector
