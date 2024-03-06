@@ -77,5 +77,5 @@ _Previous command will install the following necessary libraries for the project
 
 ## Analysis & Visualization <a name="analysis-visualizations"></a> ###
 
-### These visualizations can be seen in the **[Dashboard Summary](https://github.com/RJuanJo/etl-project/blob/main/data/documentation/Report%20ETL%20Project.pdf)**.
+### These visualizations can be seen in the **[Dashboard Summary](https://github.com/RJuanJo/etl-project/blob/main/data/documentation/ProJectDB.pdf)**.
 ### Also, threre is the **[Virtual Dashboard](https://app.powerbi.com/view?r=eyJrIjoiODRkOTQxZWYtNTAxOC00OTMyLWJjMGUtNzVjODFmYzNjNGY0IiwidCI6IjY5M2NiZWEwLTRlZjktNDI1NC04OTc3LTc2ZTA1Y2I1ZjU1NiIsImMiOjR9)** for a better interactive experience and a greater display of the data.
