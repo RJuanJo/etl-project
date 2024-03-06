@@ -3,7 +3,7 @@
 _In this project, where a dataset from AIRBNB from Kaggle is used, 
 which gives us certain interesting variables from which decisions can be made based on the analysis and management of the data._
 
-_Also, *[Detailed Documentation]()* is available that covers everything from data selection to the final visualizations_
+_Also, *[Detailed Documentation](https://github.com/RJuanJo/etl-project/blob/main/data/documentation/Report%20ETL%20Project.pdf)* is available that covers everything from data selection to the final visualizations_
 
 ## Table of Contents ##
 - [Requirements](#requirements)
