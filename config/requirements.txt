@@ -8,3 +8,4 @@ sqlalchemy-utils
 mysqlclient
 seaborn
 mysql.connector
+requests
