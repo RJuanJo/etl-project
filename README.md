@@ -58,6 +58,7 @@ _Previous command will install the following necessary libraries for the project
 - sqlalchemy-utils
 - mysqlclient
 - mysql.connector
+- requests
 ```
 ## Data Treatment <a name="data-treatment"></a> ##
  
