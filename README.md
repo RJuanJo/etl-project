@@ -90,5 +90,5 @@ _- The second part is located at **[ApiFusion](https://github.com/RJuanJo/etl-pr
 
 ## Analysis & Visualization <a name="analysis-visualizations"></a> ###
 
-### These visualizations can be seen in the **[Dashboard Summaries](https://github.com/RJuanJo/etl-project/blob/main/data/documentation/ProJectDB.pdf)(https://github.com/RJuanJo/etl-project/blob/main/data/documentation/ProjectApiDB.pdf)**.
+### These visualizations can be seen in the **[Initial Dashboard](https://github.com/RJuanJo/etl-project/blob/main/data/documentation/ProJectDB.pdf)** and **[API Dashboard](https://github.com/RJuanJo/etl-project/blob/main/data/documentation/ProjectApiDB.pdf)**.
 ### Also, threre is the **[Virtual Dashboard](https://app.powerbi.com/view?r=eyJrIjoiODRkOTQxZWYtNTAxOC00OTMyLWJjMGUtNzVjODFmYzNjNGY0IiwidCI6IjY5M2NiZWEwLTRlZjktNDI1NC04OTc3LTc2ZTA1Y2I1ZjU1NiIsImMiOjR9)** without API data and there's the **[API-Data Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNDBiOGI4ZjktMTA0ZC00MmNiLWE4YjYtMTJhZjYzZDIxNWEyIiwidCI6IjY5M2NiZWEwLTRlZjktNDI1NC04OTc3LTc2ZTA1Y2I1ZjU1NiIsImMiOjR9)** for a better interactive experience and a greater display of the data.
