@@ -84,8 +84,7 @@ _- The second part is located at **[ApiFusion](https://github.com/RJuanJo/etl-pr
 ## Data Uploading <a name="data-uploading"></a> ##
 
  _This process was carried out in **[InitialData Loading Notebook](https://github.com/RJuanJo/etl-project/blob/main/notebooks/conection.ipynb)** where a connection to the MySQL database engine is established, 
- once the connection is made, the database with its respective table will be created where the 
- **[Processed Data](https://github.com/RJuanJo/etl-project/tree/main/data/processed_data/clean_data.csv)** will be stored._
+ once the connection is made, the database with its respective table will be created where the processed data will be stored._
 
 -_Finally, a merge is performed in **[MergingData Notebook](https://github.com/RJuanJo/etl-project/blob/main/notebooks/merge_data.ipynb)** where the initially obtained data is combined with the data extracted from the API, and is finally stored in a new table with all the previously processed data within the same notebook in the database._
 
