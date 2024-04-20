@@ -71,7 +71,7 @@ _Previous command will install the following necessary libraries for the project
 
 _Additionally, **[API EDA Notebook](https://github.com/RJuanJo/etl-project/blob/main/notebooks/edaapi.ipynb)** is responsible for analyzing the data obtained from the API._
 
-## API Data <a name="API-data"></a> ##
+## API Data <a name="api-data"></a> ##
 
 _In this process, access to an API called **[Apify](https://apify.com/?fpr=i6ouv&gad_source=1&gclid=CjwKCAjwrIixBhBbEiwACEqDJbE9W4hFRbrlWXlb9IpnMuG9xc3Cl0e_F5o-vh5WW26-PH7cRg3LDxoCx3wQAvD_BwE)** is achieved, which was very helpful in bringing in more data to complement our previous data._ 
 
