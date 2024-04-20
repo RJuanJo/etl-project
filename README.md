@@ -61,7 +61,7 @@ _Previous command will install the following necessary libraries for the project
 ```
 ## Data Treatment <a name="data-treatment"></a> ##
  
- _This process was carried out in **[InitalData EDA Notebook](https://github.com/RJuanJo/etl-project/blob/main/notebooks/project_eda.ipynb)** where the following procedures are being carried out:_
+ _This process was carried out in **[InitalData EDA Notebook](https://github.com/RJuanJo/etl-project/blob/main/notebooks/InitialDataEDA.ipynb)** where the following procedures are being carried out:_
 
 - Identification of null data
 - Identification of outliers
@@ -69,7 +69,7 @@ _Previous command will install the following necessary libraries for the project
 - Handling of outliers
 - Exploratory Data Analysis (EDA)
 
-_Additionally, **[API EDA Notebook](https://github.com/RJuanJo/etl-project/blob/main/notebooks/edaapi.ipynb)** is responsible for analyzing the data obtained from the API._
+_Additionally, **[API EDA Notebook](https://github.com/RJuanJo/etl-project/blob/main/notebooks/ApiEDA.ipynb)** is responsible for analyzing the data obtained from the API._
 
 ## API Data <a name="api-data"></a> ##
 
@@ -83,12 +83,12 @@ _- The second part is located at **[ApiFusion](https://github.com/RJuanJo/etl-pr
 
 ## Data Uploading <a name="data-uploading"></a> ##
 
- _This process was carried out in **[InitialData Loading Notebook](https://github.com/RJuanJo/etl-project/blob/main/notebooks/conection.ipynb)** where a connection to the MySQL database engine is established, 
+ _This process was carried out in **[InitialDataLoading Notebook](https://github.com/RJuanJo/etl-project/blob/main/notebooks/InitialDataLoading.ipynb)** where a connection to the MySQL database engine is established, 
  once the connection is made, the database with its respective table will be created where the processed data will be stored._
 
--_Finally, a merge is performed in **[MergingData Notebook](https://github.com/RJuanJo/etl-project/blob/main/notebooks/merge_data.ipynb)** where the initially obtained data is combined with the data extracted from the API, and is finally stored in a new table with all the previously processed data within the same notebook in the database._
+-_Finally, a merge is performed in **[MergingData Notebook](https://github.com/RJuanJo/etl-project/blob/main/notebooks/MergingData.ipynb)** where the initially obtained data is combined with the data extracted from the API, and is finally stored in a new table with all the previously processed data within the same notebook in the database._
 
 ## Analysis & Visualization <a name="analysis-visualizations"></a> ###
 
-### These visualizations can be seen in the **[Dashboard Summary](https://github.com/RJuanJo/etl-project/blob/main/data/documentation/ProJectDB.pdf)**.
+### These visualizations can be seen in the **[Dashboard Summaries](https://github.com/RJuanJo/etl-project/blob/main/data/documentation/ProJectDB.pdf)(https://github.com/RJuanJo/etl-project/blob/main/data/documentation/ProjectApiDB.pdf)**.
 ### Also, threre is the **[Virtual Dashboard](https://app.powerbi.com/view?r=eyJrIjoiODRkOTQxZWYtNTAxOC00OTMyLWJjMGUtNzVjODFmYzNjNGY0IiwidCI6IjY5M2NiZWEwLTRlZjktNDI1NC04OTc3LTc2ZTA1Y2I1ZjU1NiIsImMiOjR9)** without API data and there's the **[API-Data Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNDBiOGI4ZjktMTA0ZC00MmNiLWE4YjYtMTJhZjYzZDIxNWEyIiwidCI6IjY5M2NiZWEwLTRlZjktNDI1NC04OTc3LTc2ZTA1Y2I1ZjU1NiIsImMiOjR9)** for a better interactive experience and a greater display of the data.
