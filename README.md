@@ -78,6 +78,7 @@ _In this process, access to an API called **[Apify](https://apify.com/?fpr=i6ouv
 _The management of the API data is located in the **[Api folder](https://github.com/RJuanJo/etl-project/tree/main/Api)** and is divided into two parts:_
 
 _- The first part is carried out in **[Extracting Data](https://github.com/RJuanJo/etl-project/blob/main/Api/Apiextraction.py)**, which establishes the connection and retrieves the data obtained from the API._
+
 _- The second part is located at **[ApiFusion](https://github.com/RJuanJo/etl-project/blob/main/Api/ApiFusion.py)**, which is responsible for combining and unifying all the data obtained into one, to facilitate the management of this data later on._
 
 ## Data Uploading <a name="data-uploading"></a> ##
