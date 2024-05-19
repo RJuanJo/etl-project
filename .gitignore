@@ -4,3 +4,5 @@ clean_data.csv
 dataBl.csv
 dataJT.csv
 dataBC.csv
+__pycache__/
+logs/
