@@ -41,7 +41,6 @@ def transform_api_data(**kwargs):
     try:
         datasets = []
 
-        # Leer los datos extraídos desde archivos JSON
         for i in range(3):
             file_name = f"data_{i+1}.json"
             with open(file_name, "r") as f:
@@ -73,7 +72,6 @@ def transform_api_data(**kwargs):
 
         logger.info(f"Shape of the resulting DataFrame: {merged_df.shape}")
 
-        # Convertir DataFrame a JSON y empujar a XCom
         api_json = merged_df.to_json(orient='records')
         ti = kwargs['ti']
         ti.xcom_push(key='api_data', value=api_json)
