@@ -12,3 +12,5 @@ pip
 sqlalchemy-utils
 mysqlclient
 mysql.connector
+kafka
+kafka-python
