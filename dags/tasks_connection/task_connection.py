@@ -8,7 +8,6 @@ sys.path.append(os.path.abspath("/opt/airflow/dags/"))
 from etls.api_etl import extract_api_data, transform_api_data
 from etls.data_etl import extract_data_etl, transform_data_etl
 from etls.merge_data import merge_data, load_data
-from etls.kafka import start_producer,start_consumer
 
 default_args = {
     'owner': 'airflow',

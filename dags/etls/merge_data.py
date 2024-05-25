@@ -56,7 +56,6 @@ def create_database():
             database = keys["database"]
             port = keys["port"]
 
-        # Connect to the MySQL server to create the database if it doesn't exist
         default_engine = create_engine(f'mysql+mysqlconnector://{user}:{password}@{host}:{port}')
         
         with default_engine.connect() as conn:
