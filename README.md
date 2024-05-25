@@ -38,6 +38,7 @@ ensure you have the following programs installed with which the entire project p
    - **[MySQL](https://www.mysql.com/downloads/)**
    - **[PowerBI](https://powerbi.microsoft.com/es-es/downloads/)**
    - **[VS Code](https://code.visualstudio.com/download)** or **[Jupyter](https://jupyter.org/install)**
+   - **[Docker](https://www.docker.com/products/docker-desktop/)**
 
 _Using the **[requirements.txt](https://github.com/RJuanJo/etl-project/blob/main/config/requirements.txt)**
 run the following command in the root of the project into a terminal shell to install all necessary libraries
