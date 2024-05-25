@@ -6,10 +6,9 @@ which gives us certain interesting variables from which decisions can be made ba
 ## Table of Contents ##
 - [Requirements](#requirements)
 - [Setup](#setup)
-- [Data Treatment](#data-treatment)
-- [API Data](#API-data) 
-- [Data Uploading](#data-uploading)
-- [Analysis & Visualizations](#analysis-visualizations)
+- [Data EDA](#data-eda)
+- [Airflow DAG](#airflow-dag)
+- [Visualizations](#analysis-visualizations)
 
 ## Requirements <a name="requirements"></a> ##
 - Python 3.x
@@ -18,7 +17,8 @@ which gives us certain interesting variables from which decisions can be made ba
 - Pandas & Numpy
 - MySQL Workbench
 - **[Data](https://github.com/RJuanJo/etl-project/tree/main/data)**
-_where the selected files are located with which the treatment and subsequently the analysis will be carried out_
+- Docker
+- Docker Compose
 - JSON credentials file ("credentials.json") with this format:
   
   ```
@@ -27,6 +27,7 @@ _where the selected files are located with which the treatment and subsequently 
     "user" : "your_user",
     "password" : "your_password",
     "database" : "database_name"
+    "port" : "port_of_your_mysql_server"
   }
   ``` 
 ## Setup <a name="setup"></a> ##
@@ -44,22 +45,8 @@ run the following command in the root of the project into a terminal shell to in
 ```python
 pip install -r config\requirements.txt
 ```
-_Previous command will install the following necessary libraries for the project_
 
-```python
-- pip
-- seaborn
-- matplotlib
-- numpy
-- pandas
-- mysql
-- sqlalchemy
-- sqlalchemy-utils
-- mysqlclient
-- mysql.connector
-- requests
-```
-## Data Treatment <a name="data-treatment"></a> ##
+## Data EDA <a name="data-eda"></a> ##
  
  _This process was carried out in **[InitalData EDA Notebook](https://github.com/RJuanJo/etl-project/blob/main/notebooks/InitialDataEDA.ipynb)** where the following procedures are being carried out:_
 
@@ -71,22 +58,23 @@ _Previous command will install the following necessary libraries for the project
 
 _Additionally, **[API EDA Notebook](https://github.com/RJuanJo/etl-project/blob/main/notebooks/ApiEDA.ipynb)** is responsible for analyzing the data obtained from the API._
 
-## API Data <a name="api-data"></a> ##
+## Airflow DAG <a name="airflow-dag"></a> ###
 
-_In this process, access to an API called **[Apify](https://apify.com/?fpr=i6ouv&gad_source=1&gclid=CjwKCAjwrIixBhBbEiwACEqDJbE9W4hFRbrlWXlb9IpnMuG9xc3Cl0e_F5o-vh5WW26-PH7cRg3LDxoCx3wQAvD_BwE)** is achieved, which was very helpful in bringing in more data to complement our previous data._ 
+In this process, after obtaining a considerable amount of information through EDA, a DAG is created to handle the entire data ETL process. To do this, we first need to initialize the environment, so run the following command in a command shell at the root of the project:
 
-_The management of the API data is located in the **[Api folder](https://github.com/RJuanJo/etl-project/tree/main/Api)** and is divided into two parts:_
+```bash
+docker-compose up airflow-init
+```
 
-_- The first part is carried out in **[Extracting Data](https://github.com/RJuanJo/etl-project/blob/main/Api/Apiextraction.py)**, which establishes the connection and retrieves the data obtained from the API._
+Then, to start the containers, use the following command:
 
-_- The second part is located at **[ApiFusion](https://github.com/RJuanJo/etl-project/blob/main/Api/ApiFusion.py)**, which is responsible for combining and unifying all the data obtained into one, to facilitate the management of this data later on._
+```bash
+docker-compose up
+```
 
-## Data Uploading <a name="data-uploading"></a> ##
+Finally, go to http://localhost:8080/ and log in with the credentials `airflow` and `airflow`. 
 
- _This process was carried out in **[InitialDataLoading Notebook](https://github.com/RJuanJo/etl-project/blob/main/notebooks/InitialDataLoading.ipynb)** where a connection to the MySQL database engine is established, 
- once the connection is made, the database with its respective table will be created where the processed data will be stored._
-
--_Finally, a merge is performed in **[MergingData Notebook](https://github.com/RJuanJo/etl-project/blob/main/notebooks/MergingData.ipynb)** where the initially obtained data is combined with the data extracted from the API, and is finally stored in a new table with all the previously processed data within the same notebook in the database._
+In the Airflow interface, search for the DAG "project-dag", activate it, select it, and click on "Trigger" to begin the ETL process.
 
 ## Analysis & Visualization <a name="analysis-visualizations"></a> ###
 
