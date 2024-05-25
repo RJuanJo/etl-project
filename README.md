@@ -61,7 +61,7 @@ _Additionally, **[API EDA Notebook](https://github.com/RJuanJo/etl-project/blob/
 
 ## Airflow DAG <a name="airflow-dag"></a> ###
 
-In this process, after obtaining a considerable amount of information through EDA, a DAG is created to handle the entire data ETL process. To do this, we first need to initialize the environment, so run the following command in a command shell at the root of the project:
+In this process, after obtaining a considerable amount of information through EDA, a DAG is created to handle the entire data ETL process. To do this, is needed to initialize the environment, so run the following command in a command shell at the root of the project:
 
 ```bash
 docker-compose up airflow-init
